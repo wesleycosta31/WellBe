@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellBe.API", "WellBe.API\WellBe.API.csproj", "{BA5865BA-0EA2-40CD-A6DD-7F4D30EC3005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellBe.Business", "WellBe.Business\WellBe.Business.csproj", "{E376ED60-3238-4BDE-A22E-92BA3A8A4445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WellBe.Data", "WellBe.Data\WellBe.Data.csproj", "{E60B8ADB-74B2-4531-9D62-DDAAD500F1E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA5865BA-0EA2-40CD-A6DD-7F4D30EC3005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5865BA-0EA2-40CD-A6DD-7F4D30EC3005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5865BA-0EA2-40CD-A6DD-7F4D30EC3005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5865BA-0EA2-40CD-A6DD-7F4D30EC3005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E376ED60-3238-4BDE-A22E-92BA3A8A4445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E376ED60-3238-4BDE-A22E-92BA3A8A4445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E376ED60-3238-4BDE-A22E-92BA3A8A4445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E376ED60-3238-4BDE-A22E-92BA3A8A4445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60B8ADB-74B2-4531-9D62-DDAAD500F1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60B8ADB-74B2-4531-9D62-DDAAD500F1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60B8ADB-74B2-4531-9D62-DDAAD500F1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60B8ADB-74B2-4531-9D62-DDAAD500F1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
