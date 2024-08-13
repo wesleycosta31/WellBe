@@ -1,4 +1,6 @@
 using WellBe.Business.Common;
+using WellBe.Business.Parceiros;
+using WellBe.Business.Profissionais.Agenda;
 
 namespace WellBe.Business.Profissionais
 {
@@ -20,7 +22,18 @@ namespace WellBe.Business.Profissionais
         public DateTime DataNascimento { get; }
 
         /// <summary>Endereço do profissional.</summary>
-        public Endereco? Endereco { get; } = null!;
+        public Endereco Endereco { get; }
+
+        /// <summary>Lista de especializações do profissional.</summary>
+        public IEnumerable<EspecializacaoProfissional> Especializacoes { get; }
+
+        /// <summary>Lista de especializações do profissional.</summary>
+        public IEnumerable<EmpresaParceiro> ParceiroProfissional { get; }
+
+        /// <summary>Agenda do profissional.</summary>
+        public AgendaProfissional Agenda { get; }
+
+        // Gerar construtores para as classes
 
         // Trabalhar no desenvolvimento da agenda do profissional.
     }

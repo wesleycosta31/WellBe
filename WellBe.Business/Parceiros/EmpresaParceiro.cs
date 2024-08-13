@@ -1,4 +1,5 @@
 using WellBe.Business.Common;
+using WellBe.Business.Profissionais;
 
 namespace WellBe.Business.Parceiros
 {
@@ -6,6 +7,9 @@ namespace WellBe.Business.Parceiros
     {
         /// <summary>Código de identificação da empresa parceira.</summary> 
         public uint IdEmpresaParceiro { get; }
+
+        /// <summary>CNPJ da empresa parceira.</summary>
+        public string CNPJ { get; } = null!;
 
         /// <summary>Razao social da empresa parceira.</summary>
         public string RazaoSocial { get; } = null!;
@@ -21,5 +25,8 @@ namespace WellBe.Business.Parceiros
 
         /// <summary>Categoria do negócio do parceiro.</summary> 
         public IEnumerable<CategoriaParceiro>? Categoria { get; }
+
+        /// <summary>Lista de profissionais cadastrado ao parceiro.</summary> 
+        public IEnumerable<Profissional> Profissional { get; }
     }
 }

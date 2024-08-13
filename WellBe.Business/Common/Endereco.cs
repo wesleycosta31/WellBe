@@ -7,6 +7,9 @@ namespace WellBe.Business.Common
 {
     public class Endereco
     {
+        /// <summary> Código de identificação do endereço.</summary> 
+        public int IdEndereco { get; }
+
         /// <summary> CEP do endereço.</summary> 
         public int CEP { get; }
 

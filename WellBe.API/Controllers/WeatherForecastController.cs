@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using WellBe.Business.Common;
+using WellBe.Business.Profissionais;
 
 namespace WellBe.API.Controllers;
 
@@ -19,14 +21,15 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    public Task<ProfissionalDto> ObterDadosDoProfissionalAsync(string CPF)
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        var profissional = _repositorioDeProfissional.ObterDadosDoProfissionalAsync(CPF);
+
+        return new ProfissionalDto
         {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+            IdProfissional = profissional.Id,
+            Nome = profissional.Nome,
+            CPF = profissional.CPF
+        };
     }
 }
