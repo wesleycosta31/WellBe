@@ -1,6 +1,5 @@
 using WellBe.Business.Common;
 using WellBe.Business.Parceiros;
-using WellBe.Business.Profissionais.Agenda;
 
 namespace WellBe.Business.Profissionais
 {
@@ -29,9 +28,6 @@ namespace WellBe.Business.Profissionais
 
         /// <summary>Lista de especializações do profissional.</summary>
         public IEnumerable<EmpresaParceiro> ParceiroProfissional { get; }
-
-        /// <summary>Agenda do profissional.</summary>
-        public AgendaProfissional Agenda { get; }
 
         // Gerar construtores para as classes
 

@@ -21,15 +21,8 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    public Task<ProfissionalDto> ObterDadosDoProfissionalAsync(string CPF)
+    public Task<string> ObterDadosDoProfissionalAsync(string CPF)
     {
-        var profissional = _repositorioDeProfissional.ObterDadosDoProfissionalAsync(CPF);
-
-        return new ProfissionalDto
-        {
-            IdProfissional = profissional.Id,
-            Nome = profissional.Nome,
-            CPF = profissional.CPF
-        };
+        throw new NotImplementedException();
     }
 }
