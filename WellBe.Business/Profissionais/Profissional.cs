@@ -30,7 +30,5 @@ namespace WellBe.Business.Profissionais
         public IEnumerable<EmpresaParceiro> ParceiroProfissional { get; }
 
         // Gerar construtores para as classes
-
-        // Trabalhar no desenvolvimento da agenda do profissional.
     }
 }
